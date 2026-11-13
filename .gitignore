@@ -1,0 +1,81 @@
+.env
+*.key
+*secret*
+__pycache__/
+*.pyc
+*.pyo
+
+# Local agent/editor state
+.claude/
+.codex/
+
+# Python/test caches
+.pytest_cache/
+
+# Windows/Office/generated shortcuts
+~$*
+*.lnk
+
+# Runtime logs and generated reports
+Logs/
+logs/
+_lib/logs/
+_lib/data/logs/
+*.log
+*_preview_*.html
+model_test_results_*.json
+
+# Backups and scratch outputs
+Backup/
+backup/
+*_backup_*/
+*_bak_*
+*.bak*
+Copy of *
+
+# Temporary outputs
+_tmp_*/
+_temp_*/
+*_Output_*/
+docx_unpacked/
+*_cache.json
+member_names_cache.json
+
+# Prevent auto-generated run reports from bloating the repo
+_reports/
+payroll/_reports/
+payroll/_doc/CodexTransfer.md
+payroll/_doc/nocodb_*_*.json
+payroll/_doc/*_*.log
+
+# Local Python environments
+.venv/
+venv/
+
+# Windows generated metadata
+Thumbs.db
+**/Thumbs.db
+
+# Local smoke-test and quarantine outputs
+_cleanup_quarantine_*/
+_doc/boss_report_word_png/
+receipts/_checkpoint_smoke/
+receipts/_iif_final_review_smoke/
+receipts/_review_issues_smoke/
+receipts/_claude_synthetic_bank_30.*
+receipts_pilot_v1.0/_iif_smoke_test/
+receipts_pilot_v1.0/TEST QB file/
+receipts_pilot_v1.0/port.txt
+
+# Local scratch probes
+scratch_*.txt
+test_claude_*.py
+receipts/test_claude_*.py
+receipts/test_gpt*.py
+receipts/test_gpt*.bat
+
+# Large migration payloads; keep scripts/tasks, not images/backups
+_migration/*.tar
+_migration/*.tar.gz
+_lib/server/_locks/
+receipts/_claude_synthetic_bank_30*
